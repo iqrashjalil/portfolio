@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
 const isProd = "production";
 
 module.exports = {
-  assetPrefix: isProd ? "/your-repo-name/" : "",
+  assetPrefix: isProd ? "/portfolio/" : "",
   output: "export", // Required for static export
 };
 
