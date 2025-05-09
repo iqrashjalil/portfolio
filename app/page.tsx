@@ -409,7 +409,7 @@ export default function Home() {
             <div className="w-full flex justify-center ">
               {" "}
               <Image
-                src="/images/teamtrack.png"
+                src="/images/teamtrackpic.png"
                 alt="My Image"
                 width={300}
                 height={100}
