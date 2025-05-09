@@ -5,11 +5,4 @@ const nextConfig: NextConfig = {
   devIndicators: false,
 };
 
-const isProd = process.env.NODE_ENV === "production";
-
-module.exports = {
-  assetPrefix: isProd ? "/portfolio/" : "",
-  output: "export", // Required for static export
-};
-
 export default nextConfig;
