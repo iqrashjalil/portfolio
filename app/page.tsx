@@ -29,7 +29,7 @@ export default function Home() {
   };
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/iqrashjalilcv.pdf";
+    link.href = "/iqrashjalil.pdf";
     link.download = "cv.pdf";
     document.body.appendChild(link);
     link.click();
