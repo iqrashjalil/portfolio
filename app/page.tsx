@@ -59,9 +59,9 @@ export default function Home() {
     <main className="relative bg-black">
       <section
         id="home"
-        className="p-10 min-h-[100vh] w-full flex flex-col lg:flex-row justify-center lg:h-[100vh] gap-6"
+        className="min-h-[100vh] p-4 lg:p-10 w-full flex flex-col lg:flex-row justify-center gap-6"
       >
-        <div className="flex flex-col w-full lg:w-72 gap-6">
+        <div className="flex flex-col w-full lg:w-72 gap-4 lg:gap-6 h-fit">
           <div className="bg-[#252525] flex flex-col gap-4 p-4  rounded-3xl">
             <div className="flex gap-2 justify-center items-center">
               <div className="w-8 h-8 bg-[#FF3131] rounded-full"></div>
@@ -188,15 +188,16 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className=" lg:w-[40rem] w-full lg:h-auto h-[25rem] relative aspect-[4/1] rounded-3xl">
+        <div className=" lg:w-[40rem] lg:h-[47.7rem] overflow-hidden flex w-full relative rounded-3xl">
           <Image
             src="/images/4.jpg"
             alt="My Image"
-            className="rounded-[5rem] lg:rounded-full"
-            fill
-            style={{ objectFit: "contain" }}
+            width={640}
+            height={100}
+            className="rounded-4xl "
+            loading="lazy"
           />
-          <div className="absolute lg:w-80  bottom-8 border left-5 lg:left-10 border-white bg-white/10 backdrop-blur-md rounded-3xl p-4 shadow-md">
+          <div className="absolute lg:w-80 lg:bottom-20 bottom-5 border left-5 lg:left-10 border-none bg-white/10 backdrop-blur-md rounded-3xl p-4 shadow-md">
             <h1
               style={{ fontFamily: "var(--font-grechen)" }}
               className="text-5xl font-extrabold text-[#ff3131]"
@@ -225,7 +226,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-[20rem] lg:h-[83vh] pt-20 rounded-3xl p-4 bg-[#252525]">
+        <div className="w-full lg:w-[20rem] pt-20 rounded-3xl p-4 bg-[#252525] lg:h-[47.7rem]">
           <div className="flex">
             <h1 className="text-lg text-white">
               Iqrash Jalil -{" "}
@@ -282,7 +283,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <div className="fixed lg:border-0 border border-[#ff3131] flex bottom-6 left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:right-10 lg:top-[40%] lg:bottom-auto lg:flex-col gap-5 bg-[#252525] p-4 rounded-full z-50">
+      <div className="fixed flex bottom-0 drop-shadow-2xl drop-shadow-[#ff3131] lg:drop-shadow-none lg:rounded-full w-full lg:w-fit justify-center items-center lg:left-auto lg:translate-x-0 lg:right-10 lg:top-[40%] lg:bottom-auto lg:flex-col gap-5 bg-[#373737] p-4  z-50">
         <button
           onClick={() => scrollToSection("home")}
           className={`rounded-full cursor-pointer w-10 h-10 flex justify-center items-center  text-white ${
@@ -325,7 +326,10 @@ export default function Home() {
           <Send />
         </button>
       </div>
-      <section id="projects" className="min-h-[100vh] p-10 w-full text-white">
+      <section
+        id="projects"
+        className="min-h-[100vh] p-4 lg:p-10 w-full text-white"
+      >
         <div className="w-full flex justify-center items-center">
           {" "}
           <h1 className="font-bold text-2xl lg:text-5xl">
@@ -593,7 +597,7 @@ export default function Home() {
       </section>
       <section
         id="services"
-        className="min-h-[100vh] p-10 w-full text-white bg-black]"
+        className="min-h-[100vh] p-4 lg:p-10 w-full text-white bg-black]"
       >
         <div className="w-full uppercase flex justify-center items-center">
           {" "}
@@ -663,7 +667,7 @@ export default function Home() {
       </section>
       <section
         id="experience"
-        className="min-h-[100vh] p-10 w-full text-white bg-black"
+        className="min-h-[100vh] p-4 lg:p-10 w-full text-white bg-black"
       >
         {" "}
         <div className="w-full flex justify-center items-center">
@@ -735,27 +739,31 @@ export default function Home() {
       </section>
       <section
         id="contact"
-        className="min-h-screen w-full p-10 text-white bg-black"
+        className="min-h-screen p-4 lg:p-10 w-full text-white bg-black"
       >
         <div className="w-full flex justify-center items-center">
           <h1 className="font-bold uppercase text-2xl lg:text-5xl">
             Contact <span className="text-[#ff3131]">Me</span>
           </h1>
         </div>
-        <div className="flex justify-center mt-20">
-          <form action="https://formspree.io/f/mdkgdayp" method="POST">
-            <div className="flex flex-col lg:flex-row gap-4">
+        <div className="flex justify-center mt-10">
+          <form
+            className="w-full lg:w-fit"
+            action="https://formspree.io/f/mdkgdayp"
+            method="POST"
+          >
+            <div className="flex flex-col w-full  lg:flex-row gap-4">
               <input
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="bg-gray-600 w-full lg:w-72 p-4 rounded-full border-none outline-none"
+                className="bg-[#252525] w-full lg:w-72 p-4 rounded-2xl border-none outline-none"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="bg-gray-600 lg:w-72 w-full p-4 rounded-full border-none outline-none"
+                className="bg-[#252525] rounded-2xl lg:w-72 w-full p-4 border-none outline-none"
               />
             </div>
             <div className="mt-4 w-full">
@@ -763,10 +771,10 @@ export default function Home() {
                 name="message"
                 id="message"
                 placeholder="Message"
-                className="bg-gray-600 min-h-72 w-full p-4 rounded-3xl border-none outline-none"
+                className="bg-[#252525] rounded-2xl min-h-72 w-full p-4 border-none outline-none"
               ></textarea>
             </div>
-            <div className="flex justify-center items-center mt-4">
+            <div className="flex justify-end w-full mt-4">
               <button
                 type="submit"
                 className="bg-[#ff3131] cursor-pointer rounded-full w-60 font-bold text-lg p-4"
