@@ -27,14 +27,7 @@ export default function Home() {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/Iqrashjalil.pdf";
-    link.download = "cv.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
 
@@ -90,12 +83,13 @@ export default function Home() {
               With knowledge in web development and design, I offer the best
               projects resulting in quality work.
             </p>
-            <button
-              onClick={handleDownload}
-              className="bg-[#ff3131] rounded-3xl font-extrabold text-white p-3 cursor-pointer hover:bg-red-600 transition-all duration-150"
+            <a
+              href="/Iqrashjalil.pdf"
+              download="Iqrashjalil.pdf"
+              className="bg-[#ff3131] flex justify-center items-center rounded-3xl font-extrabold text-white p-3 cursor-pointer hover:bg-red-600 transition-all duration-150"
             >
               Download CV
-            </button>
+            </a>
           </div>
           <div className="bg-[#252525] rounded-3xl p-4">
             <h1 className="font-extrabold text-white text-xl">Skills</h1>
