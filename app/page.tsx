@@ -345,12 +345,12 @@ export default function Home() {
                 alt="My Image"
                 width={300}
                 height={100}
-                className="rounded-3xl"
+                className="rounded-3xl w-full"
                 style={{ objectFit: "contain" }}
               />
             </div>
             <h1 className="text-lg font-bold uppercase mt-4">stream Support</h1>
-            <p className="text-sm mt-2">
+            <p className="text-sm text-gray-400 mt-2">
               Stream Support is a utility tool designed for Pakistani content
               creators to enable Super Chat functionality, which is not
               officially supported by YouTube in Pakistan. It provides an
@@ -417,12 +417,12 @@ export default function Home() {
                 alt="My Image"
                 width={300}
                 height={100}
-                className="rounded-3xl"
+                className="rounded-3xl w-full"
                 style={{ objectFit: "contain" }}
               />
             </div>
             <h1 className="text-lg font-bold uppercase mt-4">Team Track</h1>
-            <p className="text-sm mt-2">
+            <p className="text-sm text-gray-400 mt-2">
               TeamTrack is a project management tool that helps teams
               efficiently collaborate by assigning tasks, tracking progress, and
               managing deadlines. It features role-based access, and a dynamic
@@ -475,12 +475,12 @@ export default function Home() {
                 alt="My Image"
                 width={300}
                 height={100}
-                className="rounded-3xl"
+                className="rounded-3xl w-full"
                 style={{ objectFit: "contain" }}
               />
             </div>
             <h1 className="text-lg font-bold uppercase mt-4">Movie Mingle</h1>
-            <p className="text-sm mt-2">
+            <p className="text-sm text-gray-400 mt-2">
               Movie Mingle is a movie and TV show platform that lets users
               search, filter, and request content based on genres, year, and
               popularity. It includes an admin panel for managing the library
@@ -542,12 +542,12 @@ export default function Home() {
                 alt="My Image"
                 width={300}
                 height={100}
-                className="rounded-3xl"
+                className="rounded-3xl w-full"
                 style={{ objectFit: "contain" }}
               />
             </div>
             <h1 className="text-lg font-bold uppercase mt-4">Dukaan.pk</h1>
-            <p className="text-sm mt-2">
+            <p className="text-sm text-gray-400 mt-2">
               Dukaan.pk is a full-featured e-commerce platform built for
               Pakistani sellers to manage and grow their online stores. It
               offers product management, secure checkout, and a user-friendly
