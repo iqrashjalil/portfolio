@@ -671,6 +671,21 @@ export default function Home() {
           </h1>
         </div>
         <div className="mt-10">
+        <div className="lg:flex">
+            <div className="lg:w-[50%] lg:flex lg:justify-center lg:items-center">
+              <h1 className="text-white text-2xl font-extrabold">
+                Exec9, Lahore
+              </h1>
+            </div>
+            <div className="bg-[#252525] lg:w-[30%] mt-4 rounded-3xl p-4">
+              <h1 className="font-bold text-[#ff3131]">Full Stack Developer</h1>
+              <p className="text-gray-400 text-sm">Oct 2024 - Present</p>
+              <p className=" text-sm">
+               At Exec9, I’ve evolved as a Full Stack Developer by combining traditional development with modern no-code tools to deliver impactful digital solutions. I worked across the MERN stack while also adopting platforms like Webflow CMS and Ecwid to meet varied client needs efficiently. Key projects include Therapa, a therapy services platform; ThinkFirst, a full-featured school management system; and PYMC, a client-focused promotional website built with Webflow. These experiences highlight my ability to quickly adapt, lead development from concept to deployment, and build scalable, user-centric applications that drive real results.
+
+              </p>
+            </div>
+          </div>
           <div className="lg:flex">
             <div className="lg:w-[50%] lg:flex lg:justify-center lg:items-center">
               <h1 className="text-white text-2xl font-extrabold">
@@ -678,7 +693,7 @@ export default function Home() {
               </h1>
             </div>
             <div className="bg-[#252525] lg:w-[30%] mt-4 rounded-3xl p-4">
-              <h1 className="font-bold">Full Stack Developer</h1>
+              <h1 className="font-bold text-[#ff3131]">Full Stack Developer</h1>
               <p className="text-gray-400 text-sm">Oct 2024 - Present</p>
               <p className=" text-sm">
                 At Llyods Knight, I’ve grown significantly as a Full Stack
@@ -700,7 +715,7 @@ export default function Home() {
               </h1>
             </div>
             <div className="bg-[#252525] lg:w-[30%] mt-4 rounded-3xl p-4">
-              <h1 className="font-bold">Full Stack Developer</h1>
+              <h1 className="font-bold text-[#ff3131]">Full Stack Developer</h1>
               <p className="text-gray-400 text-sm">Mar 2024 - Sep 2024</p>
               <p className=" text-sm">
                 I’ve had the opportunity to work on cutting-edge web solutions
@@ -718,7 +733,7 @@ export default function Home() {
               <h1 className="text-white text-2xl font-extrabold">CodSoft</h1>
             </div>
             <div className="bg-[#252525] lg:w-[30%] mt-4 rounded-3xl p-4">
-              <h1 className="font-bold">Web Developer</h1>
+              <h1 className="font-bold text-[#ff3131]">Web Developer</h1>
               <p className="text-gray-400 text-sm">1 Month</p>
               <p className=" text-sm">
                 At CodSoft, I gained hands-on experience in full stack
